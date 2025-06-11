@@ -39,3 +39,13 @@ Przetwarzanie plików JSON na tabele w Excelu, zaokrąglenie wartości do trzech
 Wszystkie wymagane biblioteki znajdują się w pliku requirements.txt. Aby je zainstalować, użyj polecenia:
 ```bash
 pip install -r requirements.txt
+```
+## Pliki wynikowe
+
+Ze względu na rozmiar danych foldery `Monomer/` (uwzględniający jedynie N4BP1 jako przykład ze względu na rozmiar) oraz `Multimer/` zostały spakowane jako archiwum `.7z`.
+
+**Przed użyciem należy rozpakować plik:**
+
+```bash
+7z x multimer.7z
+
