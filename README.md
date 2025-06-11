@@ -1,5 +1,5 @@
 # Modelowanie-Kompleksow-N4BP1-z-AlphaFold
-Pliki wejściowe, wyniki oraz kody pomocnicze stosowane w pracy licencjackiej
+Pliki wejściowe, wyniki oraz kody pomocnicze stosowane w pracy licencjackiej.
 
 ## Wykorzystane parametry programów
 
@@ -25,12 +25,17 @@ Pliki wejściowe, wyniki oraz kody pomocnicze stosowane w pracy licencjackiej
 | **Ilość predykcji na model**      | `1`                      | Sekwencje wszystkich łańcuchów białkowych w kompleksie    |
 | **Latest date to use for template search** | `2023-05-30` |  Najpóźniejsza data, do której mogą pochodzić szablony (struktury białkowe) użyte do dopasowania w bazie PDB, uzyta wartość domyślna |
 
+## Skrypty pomocnicze
+### DomainGenerator
+Użyty w pracy do wizualizacji. Generuje pasek z zaznaczonymi w odpowiednich miejscach sekwencji nazwami domen w wybranych kolorach oraz skrypt do Chimery, który koloruje domeny białka zgodnie z nimi.
 
+### multimerFileGenerator
+Tworzenie plików wejściowych do programu AlphaFold Multimer - umożliwia wybieranie pożądanych części sekwencji i umieszcza je w jednym pliku akceptowanym przez COSMIC².
 
----
+### TableGenerator
+Przetwarzanie plików JSON na tabele w Excelu, zaokrąglenie wartości do trzech miejsc po przecinku
 
-Te ustawienia zapewniają dobre domyślne działanie dla większości analiz, jednocześnie dając użytkownikowi możliwość ręcznego dostosowania parametrów w interfejsie Galaxy.
-
----
-
-*Źródła:* analiza obecnej wersji narzędzia AlphaFold na Galaxy.org oraz dokumentacja dostępna na platformie.
+## Wymagania
+Wszystkie wymagane biblioteki znajdują się w pliku requirements.txt. Aby je zainstalować, użyj polecenia:
+```bash
+pip install -r requirements.txt
